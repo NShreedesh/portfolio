@@ -1,15 +1,43 @@
+@import "../../sass_reusables/variables.scss";
+
+body {
+  background-color: $bg;
+}
+
 #nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgb(102, 161, 112);
+  background-color: $dark;
+  font-family: $poppins;
+  user-select: none;
+
+  .left-nav {
+    h1 {
+      color: $light;
+      cursor: pointer;
+    }
+  }
+
   .right-nav {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+
     a {
+      font-weight: 400;
       text-decoration: none;
-      color: black;
+      color: $light;
+      text-align: center;
+      width: 80px;
+      padding: 10px 0;
+    }
+
+    .active {
+      background-color: $primary;
+      border-radius: 10px;
+      color: $dark;
+      font-weight: bold;
     }
   }
 }
