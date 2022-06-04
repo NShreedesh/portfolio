@@ -2,6 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/navbar/Navbar";
 import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Project from "./pages/project/Project";
+import Skills from "./pages/skills/Skills";
+import Work from "./pages/work/Work";
 
 function App() {
   return (
@@ -10,6 +14,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/work" element={<Work />} />
         </Routes>
       </BrowserRouter>
     </div>
