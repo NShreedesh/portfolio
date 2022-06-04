@@ -1,12 +1,15 @@
-
-
-#nav{
-    .right-nav{
-        display: flex;
-        gap: 10px;
-        a{
-            text-decoration: none;
-            color: black;
-        }
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(102, 161, 112);
+  .right-nav {
+    display: flex;
+    gap: 20px;
+    a {
+      text-decoration: none;
+      color: black;
     }
+  }
 }
