@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+//font details
 $poppins: "Poppins", sans-serif;
 
+//colors
 $dark: rgb(29, 29, 29);
 $light: white;
 $primary: rgb(162, 162, 246);
 $bg: rgb(244, 244, 255);
+
+//breakpoint
+@mixin breakpoint($point) {
+  @if $point == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}
