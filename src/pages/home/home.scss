@@ -9,15 +9,25 @@
     align-items: center;
     justify-content: center;
     gap: 10%;
+    @include breakpoint(lg) {
+      text-align: center;
+      flex-direction: column-reverse;
+    }
     .details {
       h1 {
         font-size: 3rem;
         font-family: $poppins;
       }
       p {
-        margin-top: 20px;
+        margin-top: 16px;
         font-size: larger;
         font-family: $poppins;
+      }
+      hr {
+        background-color: black;
+        @include breakpoint(lg) {
+          height: 6px;
+        }
       }
     }
     .img-container {

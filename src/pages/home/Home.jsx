@@ -8,6 +8,7 @@ function Home() {
         <div className="details">
           <h1>Hi! I Am</h1>
           <h1>Shreedesh Niroula</h1>
+          <hr></hr>
           <p>A self taught and Strongly determined Game / Web developer</p>
         </div>
         <div className="img-container">

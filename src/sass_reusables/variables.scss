@@ -19,5 +19,9 @@ $bg: rgb(244, 244, 255);
     @media (max-width: 768px) {
       @content;
     }
+  } @else if $point == lg {
+    @media (max-width: 1024px) {
+      @content;
+    }
   }
 }
