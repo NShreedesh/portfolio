@@ -23,5 +23,9 @@ $bg: rgb(244, 244, 255);
     @media (max-width: 1024px) {
       @content;
     }
+  } @else if $point == xlg {
+    @media (min-width: 1024px) {
+      @content;
+    }
   }
 }

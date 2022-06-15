@@ -5,10 +5,10 @@ import "./navbar.scss";
 function Navbar() {
   return (
     <nav id="nav">
-      <div className="left-nav">
+      <div className="header-nav">
         <h1>My Portfolio</h1>
       </div>
-      <div className="right-nav">
+      <div className="link-nav">
         <NavLink to="/" activeClassName="active">
           Home
         </NavLink>
@@ -24,6 +24,9 @@ function Navbar() {
         <NavLink to="/work" activeClassName="active">
           Work
         </NavLink>
+      </div>
+      <div className="footer-nav">
+        <p>Footer</p>
       </div>
     </nav>
   );
