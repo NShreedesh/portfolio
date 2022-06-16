@@ -4,6 +4,7 @@ import Hamburger from "../../components/hamburger/Hamburger";
 import CustomNavLink from "../../components/navlink/CustomNavLink";
 
 import "./navbar.scss";
+import NavbarFooter from "../../components/navbarfooter/NavbarFooter";
 
 function Navbar() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -25,9 +26,7 @@ function Navbar() {
           <CustomNavLink link="/skills" buttonName="Skills" />
           <CustomNavLink link="/work" buttonName="Work" />
         </div>
-        <div className="footer-nav">
-          <p>Footer</p>
-        </div>
+        <NavbarFooter/>
       </div>
     </nav>
   );

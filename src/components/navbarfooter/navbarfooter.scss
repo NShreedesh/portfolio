@@ -1,0 +1,28 @@
+@import '../../sass_reusables/variables.scss';
+
+#footer-nav {
+    color: $light;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include breakpoint(xlg) {
+      display: none;
+    }
+
+    .footer-bottom{
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+
+      a{
+        color: white;
+        transition: color 0.2s ease;
+
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+  }

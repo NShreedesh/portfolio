@@ -20,8 +20,12 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 20px 0;
-      transition: transform 0.25s ease;
       transform: translateX(-100%);
+      transition: transform 0.25s ease;
+
+      @include breakpoint(sm){
+        padding-bottom: 100px;
+      }
 
       &.active {
         display: flex;
@@ -42,15 +46,7 @@
 
       @include breakpoint(lg) {
         flex-direction: column;
-        gap: 20px;
-      }
-    }
-
-    .footer-nav {
-      color: $light;
-
-      @include breakpoint(xlg) {
-        display: none;
+        gap: 12px;
       }
     }
   }
