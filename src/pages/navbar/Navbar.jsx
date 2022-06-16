@@ -5,6 +5,7 @@ import CustomNavLink from "../../components/navlink/CustomNavLink";
 
 import "./navbar.scss";
 import NavbarFooter from "../../components/navbarfooter/NavbarFooter";
+import { navbarData } from "../../data/navbarData";
 
 function Navbar() {
   const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -20,11 +21,13 @@ function Navbar() {
           <h1>My Portfolio</h1>
         </div>
         <div className="link-nav">
-          <CustomNavLink link="/" buttonName="Home" />
-          <CustomNavLink link="/about" buttonName="About" />
-          <CustomNavLink link="/project" buttonName="Project" />
-          <CustomNavLink link="/skills" buttonName="Skills" />
-          <CustomNavLink link="/work" buttonName="Work" />
+          {
+            navbarData.map((data, index)=>{
+              return(
+                <CustomNavLink key={index}  data={data} />
+              );
+            })
+          }
         </div>
         <NavbarFooter/>
       </div>

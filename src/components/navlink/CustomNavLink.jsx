@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 import "./customNavLink.scss";
 
 function CustomNavLink(props) {
-  const { buttonName, link } = props;
+  const { data } = props;
 
   return (
     <div className="navLink">
-      <NavLink to={link} activeclassname="active">
-        {buttonName}
+      <NavLink to={data.link} activeclassname="active">
+        {data.title}
       </NavLink>
     </div>
   );
