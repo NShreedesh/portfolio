@@ -1,0 +1,21 @@
+@import "../../sass_reusables/variables.scss";
+
+.navLink {
+  display: flex;
+
+  a {
+    font-weight: 400;
+    text-decoration: none;
+    color: $light;
+    text-align: center;
+    width: 80px;
+    padding: 10px 0;
+  }
+
+  .active {
+    background-color: $primary;
+    border-radius: 10px;
+    color: $dark;
+    font-weight: bold;
+  }
+}
