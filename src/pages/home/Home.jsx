@@ -6,10 +6,16 @@ function Home() {
     <div id="home">
       <div className="body">
         <div className="details">
-          <h1>Hi! I Am</h1>
-          <h1>Shreedesh Niroula</h1>
-          <hr></hr>
-          <p>A self taught and Strongly determined Game / Web developer</p>
+          <div className="details-text">
+            <h1>Hi! I Am</h1>
+            <h1>Shreedesh Niroula</h1>
+            <hr></hr>
+            <p>A self taught and Strongly determined Game / Web developer</p>
+          </div>
+          <div className="details-button">
+            <button>Hire Me</button>
+            <button>Get CV</button>
+          </div>
         </div>
         <div className="img-container">
           <img

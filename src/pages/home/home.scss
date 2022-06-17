@@ -1,32 +1,66 @@
 @import "../../sass_reusables/variables.scss";
 
 #home {
-  height: $homeHeight;
-  padding: 0 50px;
   .body {
-    height: 100%;
+    padding: 0 50px;
+    height: $homeHeight;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10%;
     @include breakpoint(lg) {
+      height: 100vh;
       text-align: center;
       flex-direction: column-reverse;
     }
     .details {
-      h1 {
-        font-size: 3rem;
-        font-family: $poppins;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      @include breakpoint(md){
+        gap: 15px;
       }
-      p {
-        margin-top: 16px;
-        font-size: larger;
-        font-family: $poppins;
+
+      .details-text{
+        h1 {
+          font-size: 3rem;
+          font-family: $poppins;
+        }
+        p {
+          margin-top: 16px;
+          font-size: larger;
+          font-family: $poppins;
+        }
+        hr {
+          background-color: black;
+          @include breakpoint(lg) {
+            height: 6px;
+          }
+        }
       }
-      hr {
-        background-color: black;
-        @include breakpoint(lg) {
-          height: 6px;
+
+      .details-button{
+        display: flex;
+        gap: 30px;
+
+        button{
+          width: 50%;
+          height: 60px;
+          border-radius: 5px;
+          cursor: pointer;
+          border: none;
+          font-weight: bold;
+          font-size: larger;
+          color: $light;
+          background-color: rgb(239, 134, 134);
+          transition: background-color .3s ease, color .3s ease;
+
+          &:hover{
+            background-color: rgb(255,204,204, 0.3);
+            border: 2px solid rgb(233, 80, 80);
+            color: $dark;
+          }
         }
       }
     }
