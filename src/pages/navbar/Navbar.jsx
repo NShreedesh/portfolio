@@ -24,7 +24,10 @@ function Navbar() {
           {
             navbarData.map((data, index)=>{
               return(
-                <CustomNavLink key={index}  data={data} />
+              <CustomNavLink key={index}  
+                data={data} 
+                sNavbarActive={isNavbarActive}
+                setIsNavbarActive={setIsNavbarActive}/>
               );
             })
           }
