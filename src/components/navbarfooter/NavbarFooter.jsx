@@ -13,22 +13,22 @@ function NavbarFooter() {
           </div>
           <div className="footer-bottom">
             <a target="_blank" 
-              rel='noreferrer'
+              rel='noopener noreferrer'
               href="https://www.facebook.com/shreedesh.niroula.9/">
               <BsFacebook/>
             </a>
             <a target="_blank" 
-              rel='noreferrer'
+              rel='noopener noreferrer'
               href="https://www.instagram.com/shreedeshniroula/">
               <BsInstagram/>
             </a>
             <a target="_blank" 
-              rel='noreferrer'
+              rel='noopener noreferrer'
               href="https://github.com/NShreedesh">
               <BsGithub/>
             </a>
             <a target="_blank" 
-              rel='noreferrer'
+              rel='noopener noreferrer'
               href="https://www.linkedin.com/in/shreedesh-niroula-5993881b8/">
               <BsLinkedin/>
             </a>

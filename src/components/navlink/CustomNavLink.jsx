@@ -11,6 +11,7 @@ function CustomNavLink(props) {
         {data.title}
       </NavLink>
     </div>
+
   );
 }
 

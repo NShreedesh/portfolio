@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.scss";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/navbar/Navbar";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
@@ -14,9 +14,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          {['/', '/portfolio'].map((path, index) => {
-            return <Route path={path} element={<Home />} />
-          })}
+          <Route path="/" element={<Navigate to={'/portfolio'}/>}/>
+          <Route path="/portfolio" element={<Home/>}/>
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
           <Route path="/skills" element={<Skills />} />
