@@ -57,7 +57,7 @@
           transition: background-color .3s ease, color .3s ease;
 
           &:hover{
-            background-color: rgb(255,204,204, 0.3);
+            background-color: rgba(255,204,204, 0.3);
             border: 2px solid rgb(233, 80, 80);
             color: $dark;
           }
