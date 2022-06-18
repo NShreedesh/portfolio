@@ -1,8 +1,9 @@
 @import "../../sass_reusables/variables.scss";
 
 #nav {
+  position: sticky;
+  top: 0px;
   .nav-container {
-    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +35,7 @@
         color: $light;
         cursor: pointer;
 
-        @include breakpoint(sm){
+        @include breakpoint(sm) {
           text-decoration: underline;
         }
       }
