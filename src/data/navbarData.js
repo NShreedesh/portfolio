@@ -2,7 +2,7 @@
 export const navbarData = [
     {
         title: "Home",
-        link: "/",
+        link: ["/", "/portfolio"],
     },
     {
         title: "About",

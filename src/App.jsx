@@ -14,7 +14,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {['/', '/portfolio'].map((path, index) => {
+            return <Route path={path} element={<Home />} />
+          })}
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
           <Route path="/skills" element={<Skills />} />
