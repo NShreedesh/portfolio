@@ -26,11 +26,20 @@
         h1 {
           font-size: 3rem;
           font-family: $poppins;
+
+          @include breakpoint(md){
+            font-size: 2.5rem;
+          }
         }
         p {
-          margin-top: 16px;
+          margin-top: 1rem;
           font-size: larger;
           font-family: $poppins;
+
+          @include breakpoint(md){
+            font-size: 0.9rem;
+            font-weight: 500;
+          }
         }
         hr {
           background-color: black;

@@ -4,8 +4,8 @@
 $poppins: "Poppins", sans-serif;
 
 //width and height
-$navbarHeight: 10vh;
-$homeHeight: 90vh;
+$navbarHeight: 12vh;
+$homeHeight: 100vh - $navbarHeight;
 
 //colors
 $dark: rgb(29, 29, 29);
