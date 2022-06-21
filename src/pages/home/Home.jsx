@@ -1,4 +1,6 @@
 import React from "react";
+import TypeWriter from "../../components/typewriter/TypeWriter";
+
 import "./home.scss";
 
 function Home() {
@@ -10,7 +12,9 @@ function Home() {
             <h1>Hi! I Am</h1>
             <h1>Shreedesh Niroula</h1>
             <hr></hr>
-            <p>A self taught and Strongly determined Game / Web developer</p>
+            <p>
+              A self taught and Strongly determined <TypeWriter />
+            </p>
           </div>
           <div className="details-button">
             <button>Hire Me</button>
