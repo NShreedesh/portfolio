@@ -39,6 +39,7 @@
         }
         hr {
           background-color: black;
+          height: 4px;
           @include breakpoint(lg) {
             height: 6px;
           }
